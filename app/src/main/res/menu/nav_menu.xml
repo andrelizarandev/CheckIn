@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/ic_recents"
+    android:icon="@drawable/ic_baseline_assignment_24"
+    android:title="Recientes"/>
+  <item
+    android:id="@+id/ic_stats"
+    android:icon="@drawable/ic_baseline_assessment_24"
+    android:title="Estadísticas"/>
+  <item
+    android:id="@+id/ic_settings"
+    android:icon="@drawable/ic_baseline_settings_applications_24"
+    android:title="Configuraciones"/>
+</menu>

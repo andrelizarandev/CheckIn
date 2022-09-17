@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="20dp"
+  tools:context=".activities.PhotoResult">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="20dp">
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Revisa que las fotografías sean fáciles de leer"
+      style="@style/title3"
+      android:layout_marginBottom="20dp"/>
+    <LinearLayout
+      android:id="@+id/ll_id_front"
+      android:layout_width="match_parent"
+      android:layout_height="140dp"
+      android:layout_marginBottom="20dp"
+      android:background="@drawable/custom_gray_dotted_container"
+      android:gravity="center"
+      android:clickable="true"
+      android:orientation="vertical"
+      android:padding="15dp">
+      <ImageView
+        android:id="@+id/iv_id_front_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+      <TextView
+        android:id="@+id/tv_id_front"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parte posterior de identificación"
+        android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/ll_id_back"
+      android:layout_width="match_parent"
+      android:layout_height="140dp"
+      android:background="@drawable/custom_gray_dotted_container"
+      android:gravity="center"
+      android:clickable="true"
+      android:orientation="vertical"
+      android:padding="15dp">
+      <ImageView
+        android:id="@+id/iv_id_back_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+      <TextView
+        android:id="@+id/tv_id_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parte trasera de identificación"
+        android:textAlignment="center" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:orientation="vertical">
+    <Button
+      android:id="@+id/btn_confirm_photos"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Confirmar fotografías"
+      android:layout_marginBottom="5dp"
+      />
+    <Button
+      android:id="@+id/btn_go_back_from_photo_result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Regresar"
+      style="?attr/materialButtonOutlinedStyle"
+      app:strokeColor="@color/blueGray200"/>
+  </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
